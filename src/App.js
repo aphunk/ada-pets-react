@@ -21,26 +21,24 @@ class App extends Component {
   }
 
 
-
-
   render() {
     const { currentPet } = this.state;
-    
+
     return (
       <main className="App">
         <header className="app-header">
           <h1>Ada Pets</h1>
         </header>
         <section className="search-bar-wrapper">
-          { /* Wave 4:  Place to add the SearchBar component */ }
+          { /* Wave 4:  Place to add the SearchBar component */}
           <SearchBar />
         </section>
-          { /* Wave 2:  Where Pet Details should appear */ }
+        { /* Wave 2:  Where Pet Details should appear */}
         <section className="pet-list-wrapper">
-          { /* Wave 1:  Where PetList should appear */ }
+          <PetList pets={pets} />
         </section>
         <section className="new-pet-form-wrapper">
-          { /* Wave 3:  Where NewPetForm should appear */ }
+          { /* Wave 3:  Where NewPetForm should appear */}
         </section>
       </main>
     );
